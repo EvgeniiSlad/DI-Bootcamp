@@ -1,0 +1,23 @@
+
+
+
+div {
+    border: 2px solid black;
+    width: 220px;
+    display: inline-block;
+}
+
+img {
+  width:40%
+}
+nav {
+    border: 2px solid green;
+    position: relative;
+}
+
+#aboutlink {
+    position: absolute;
+    top: 17px;
+    right: 13px;
+}
+

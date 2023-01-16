@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: rgb(40, 39, 39);
+}
+
+.navbar{
+    background-color: rgb(40, 39, 39); 
+    height: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+i{
+    display: block;
+    color: whitesmoke;
+    font-size: 40px;
+    line-height: 60px;
+
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: whitesmoke; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: black;
+}
+
+.mainSection{
+    height: 500px;
+}
+
+
+section{
+    background-image: url(thor.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.text{
+    margin-right: 40%;
+    text-transform: none;
+}
+

@@ -1,0 +1,31 @@
+h1 {
+    background-color: aquamarine;
+}
+h1,h2,h3 {
+    border: 2px solid red;
+}
+
+/*section p{
+    color: green;
+}*/
+section>p {
+    color: orange;
+}
+
+h2~p {
+    color: red;
+}
+h2+p {
+    color: red;
+}
+
+
+.para {
+    font-weight: bold;
+    font-size: 40px;
+    color: red;
+}
+
+.ocean{
+    border: 2px solid green;
+}
