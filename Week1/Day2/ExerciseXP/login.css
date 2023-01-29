@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(159, 157, 157);
+    text-align: center;
+}
+
+input[type=text], input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+.form{
+    padding: 16px;
+}
+
+.fa-crown{
+    text-align: left;
+    padding-right: 40%;
+}

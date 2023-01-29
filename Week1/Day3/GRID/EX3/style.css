@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap:9px;
+    grid-row-gap:9px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div{
+    color: white;
+    text-align: center;
+    font-size: 35px ;
+}
+
+.one{
+    grid-column: 1/ span 3;
+    grid-row: 1;
+
+}
+
+.two{
+    grid-column: 1;
+    grid-row: 2/ span 2;
+}
+
+.three{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.four{
+    background-color: aqua;
+}
+
+ .five{
+    grid-column: 2 /span 2;
+    grid-row: 3;
+    background-color: plum;
+ }
+
+ .six{
+    grid-column: 1 /span 2;
+    grid-row: 4;
+ }
+
+ .vos{
+    grid-column: 1 /span 3;
+ }
+
+.one,.six{
+    background-color: rgb(181, 11, 57);
+}
+.two,.sev{
+    background-color: purple;
+}
+.three,.vos{
+    background-color: lightblue;
+}

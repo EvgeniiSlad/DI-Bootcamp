@@ -66,3 +66,66 @@ section{
     text-transform: none;
 }
 
+
+@media (min-width: 1201px) {
+    .navbar{
+        background-color: rgb(4, 4, 4);
+    }
+    li a{
+        color: white;
+    }
+} 
+
+@media (max-width: 1200px) {
+    .navbar{
+        background-color: rgb(4, 4, 4);
+    }
+    li a{
+        color: white;
+    }
+} 
+
+
+@media (max-width: 992px) {
+    .navbar{
+        background-color: red;
+    }
+    li a{
+        color: white;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar{
+        background-color: lightgreen;
+    }
+    li a{
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar{
+        background-color: yellow;
+    }
+    li a{
+        color: black;
+    }
+ }
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 600px) {
+    .header h1 {
+        font-size: 35px;
+    }
+}
+
+
+
+

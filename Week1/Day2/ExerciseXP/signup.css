@@ -1,0 +1,46 @@
+body{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(159, 157, 157);
+}
+
+input [type=text], input[type=password]{
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input [type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+input{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 40%;
+    margin: 8px 0;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.container {
+    padding: 16px;
+}
+
+.fa-crown{
+    text-align: left;
+    padding-right: 40%;
+}

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    border: 2px solid red;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 5px;
+}
+
+section div{
+    text-align: center;
+    border: 1px solid blue;
+    background-color: rgb(109, 109, 255);
+    color: white;
+}
+
+.one{
+    width: 60%;
+    height: 33%;
+}
+
+.two{
+    width: 100%;
+    height: 33%;
+}
+
+.three{
+    width: 60%;
+    height: 33%;
+}
