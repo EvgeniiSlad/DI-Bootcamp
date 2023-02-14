@@ -52,20 +52,23 @@
 #     print("You chose a new fruit. I hope you enjoy")
 
 #8
-users_top = input(' enter a pizza toppings ')
-print(f' you added {users_top} topping to their pizza.')
-price = 12.5
-all_toppings = []
-all_toppings.append(users_top)
-while users_top != 'quit':
-    users_top = input(' enter a pizza toppings ')
-    print(f' you added {users_top} topping to their pizza.')
-    price += 2.5
-    all_toppings.append(users_top)
-    if users_top == 'quit':
-        price += 2.5
-        print(f'price is: {price}')
-        print(f'the list of your toppings is: {all_toppings}')
-        break
+# users_top = input(' enter a pizza toppings ')
+# print(f' you added {users_top} topping to their pizza.')
+# price = 12.5
+# all_toppings = []
+# all_toppings.append(users_top)
+# while users_top != 'quit':
+#     users_top = input(' enter a pizza toppings ')
+#     print(f' you added {users_top} topping to their pizza.')
+#     price += 2.5
+#     all_toppings.append(users_top)
+#     if users_top == 'quit':
+#         price += 2.5
+#         print(f'price is: {price}')
+#         print(f'the list of your toppings is: {all_toppings}')
+#         break
+
+
+#9
 
     
