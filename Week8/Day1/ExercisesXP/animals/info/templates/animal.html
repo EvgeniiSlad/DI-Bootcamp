@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animal</title>
 </head>
 <body>
+
     <br>
-    {{name}}
+    <h1>Name : {{animal.name}}</h1>
+    <h2>Legs : {{animal.legs}}</h2>
+    <h3>Weight : {{animal.weight}}</h3>
+    <h3>Height : {{animal.height}}</h3>
+    <h3>Speed : {{animal.speed}}</h3>
+    <h3>Family : <a href="{%url 'family' animal.family.id%}">{{fam}}</a></h3>
     <br>
-    {{legs}}
-    <br>
-    {{weight}}
-    <br>
-    {{height}}
-    <br>
-    {{speed}}
-    <br>
-    <a href="{%url 'show_family' family%}">{{family}}</a> 
+    <img src="{{animal.image}}">
 </body>
 </html>

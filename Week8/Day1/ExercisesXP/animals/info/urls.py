@@ -1,9 +1,8 @@
 from django.urls import path
-from .views import show_animal, show_family, show_animals,all_family
+from .views import show_animals, animal,family
 
 urlpatterns = [
-    path('family/<int:id>', show_family),
-    path('animal/<int:id>', show_animal),
-    path('animals/<int:id>', show_animals),
-    path('all_family<int:id>',all_family)
+    path('family/<int:id>', family, name="family"),
+    path('animal/<int:id>', animal, name="animal"),
+    path('animals/',show_animals,name='animals_all'),
 ]

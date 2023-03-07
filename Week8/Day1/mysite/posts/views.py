@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Post
 
 # Create your views here.
 def some_text(request):
@@ -10,13 +11,9 @@ def about(request):
     return HttpResponse('<h1> New TEXT!!!!!<h1>')
 
 def posts(request):
-    author = 'Evgenii'
-    title = 'This is my first post'
-    body = 'Text about my post etc.'
 
-    context: dict = {'author': author, 'title': title, 'body': body}
-    #context - data
-
+    all_posts = Post.objects.all()
+    context: dict = {'posts': all_posts}
     return render(request, 'posts.html',context)
 
 def profile(request):
@@ -29,3 +26,4 @@ def profile(request):
     }
 
     return render(request,'profile.html',context)
+

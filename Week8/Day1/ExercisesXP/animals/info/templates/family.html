@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    {{name}}
+    <!-- <h1>{{family}}</h1>
+    <ul>
+        {% for animal in animals %}
+        <li>{{animal}}</li>
+    </ul>
+    {% endfor %} -->
+    <a href="{%url 'animals_all'%}"><b>All Animals</b></a>
+    <h1> {{family.name}} </h1>
+
+    {%for animal in animals%}
+        <br>
+        <a href="{%url 'animal' animal.id%}"> {{animal.name}} </a>
+        <br>
+    {%endfor%}
+
 </body>
 </html>
