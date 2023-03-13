@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{%block content%}
+
+    <small> <a href="{%url 'homepage'%}">Homepage</a>  </small>
+
+    <h1> Categories </h1>
+
+    {% for category in categories %}
+
+    <b><a href="{%url 'category' category.id%}">{{category}}</a></b>
+    
+    <br>
+    {%endfor%}
+
+    <br>
+    Add New Category here:
+    <br>
+    <form method="POST">
+        
+        {%csrf_token%}
+        {{form}}   
+
+    <button type="submit"> Add </button>
+    </form>
+
+{%endblock content%}

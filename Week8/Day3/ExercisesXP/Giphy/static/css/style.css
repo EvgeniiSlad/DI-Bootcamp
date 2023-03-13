@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(12, 199, 136);
+    background-color: beige;
+    text-align: center;
+}
+
+img {
+    align-items: center;
+    border: groove 4px black;
+    display: flex;
+    -ms-flex-align: center;  
+}
+
+small{
+    color: rgb(12, 199, 136);
+    background-color: beige;
+}

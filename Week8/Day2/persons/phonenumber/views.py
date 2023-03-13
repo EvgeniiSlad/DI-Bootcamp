@@ -10,7 +10,7 @@ def numder(requests,number):
     return render(requests,'main.html',context)
 
 def name(request, name):
-    person = Person.objects.get(name = name)
+    person = Person.objects.get(name = name.capitalize())
     context ={'person':person}
 
     return render(request,'name.html',context)
