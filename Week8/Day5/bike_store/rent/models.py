@@ -52,7 +52,7 @@ class VehicleSize(models.Model):
 class Rental(models.Model):
 
     rental_date = models.DateTimeField(auto_now_add=True)
-    return_date = models.DateTimeField(blank=True, null=True,auto_now=True)
+    return_date = models.DateTimeField(blank=True, null=True)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE)
 

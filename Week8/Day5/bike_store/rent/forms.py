@@ -15,3 +15,11 @@ class VehicleForm(forms.ModelForm):
     class Meta:
         model = Vehicle
         fields = ('__all__')
+
+
+class RentalForm(forms.ModelForm):
+
+
+    class Meta:
+        model = Rental
+        fields = ('__all__')

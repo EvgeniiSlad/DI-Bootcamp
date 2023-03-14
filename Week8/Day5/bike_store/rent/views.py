@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import *
 from .forms import *
+from django.views.generic import ListView,DetailView, FormView
 # Create your views here.
 def customers(requset):
     customers_list = Customer.objects.all().order_by('first_name','last_name')
@@ -28,19 +29,29 @@ def add_cust(request):
     return render(request,'add.html',context)
 
 
-def rentals(request):
-    rentals_list = Rental.objects.all()
-    context = {'rentals': rentals_list}
+# def rentals(request):
+#     rentals_list = Rental.objects.all()
+#     context = {'rentals': rentals_list}
 
-    return render(request,'rentals.html',context)
+#     return render(request,'rentals.html',context)
+class RentalListView(ListView):
+    model = Rental
+    template_name = 'rentals.html'
+    context_object_name = 'rentals'
 
+# def rental(request,id:int):
+#     rental = Rental.objects.get(id=id)
+#     context = {'rental': rental}
 
-def rental(request,id:int):
-    rental = Rental.objects.get(id=id)
-    context = {'rental': rental}
+#     return render(request,'rental.html',context)
+class RentalDetailView(DetailView):
+    model = Rental
+    template_name = 'rental.html'
+    context_object_name = 'rental'
 
-    return render(request,'rental.html',context)
-
+class RentalFormView(FormView):
+    form_class = RentalForm
+    template_name = 'add_rental.html'
 
 def vehicles(request):
     vehicle_list = Vehicle.objects.all()

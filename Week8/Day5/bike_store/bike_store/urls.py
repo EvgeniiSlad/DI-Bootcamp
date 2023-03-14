@@ -19,11 +19,12 @@ from rent.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('customers/',customers),
+    path('customers/',customers,name='customers'),
     path('customer/<int:id>',customer,name='customer'),
     path('add/',add_cust),
-    path('rentals/',rentals),
-    path('rental/<int:id>',rental),
+    path('rentals/',RentalListView.as_view()),
+    path('rental/<int:pk>',RentalDetailView.as_view(),name='rental'),
+    path('add_rental/',RentalFormView.as_view()),
     path('vehicles/',vehicles),
     path('vehicle/<int:id>',vehicle),
     path('add_vehicle/',add_vehicle)
