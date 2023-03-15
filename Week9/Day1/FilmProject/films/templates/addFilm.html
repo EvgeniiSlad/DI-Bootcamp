@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{%block content%}
+    <form method="POST">
+        {%csrf_token%}
+        <h5>{{form.as_p}}</h5>
+        <button type="submit">Add</button>
+    </form>
+
+{%endblock%}
