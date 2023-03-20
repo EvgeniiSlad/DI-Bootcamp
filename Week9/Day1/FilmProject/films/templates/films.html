@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {%block content%}
+    <p>This is all films of <a href="{%url 'directors'%}">Directors</a></p>
     {%for film in films%}
-    {{film}}   
+    <h2>{{film}}</h2>
+    <br>
     {%endfor%}
 
 {%endblock%}

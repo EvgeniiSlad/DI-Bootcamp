@@ -3,6 +3,7 @@ from .models import *
 from .forms import *
 from django.views.generic import ListView, DetailView, FormView, CreateView, UpdateView, DeleteView 
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Create your views here.
 class AddCategoryView(CreateView):
     model = Category
@@ -27,12 +28,12 @@ class UpdateCategoryView(UpdateView):
 
 
 
-class FilmListView(ListView):
+class FilmListView(LoginRequiredMixin,ListView):
     template_name = 'films.html'
     model = Film
     context_object_name = 'films'
 
-class addFilm(FormView):
+class addFilm(LoginRequiredMixin,FormView):
     form_class = AddFilmForm
     template_name = 'addFilm.html'
     success_url = reverse_lazy('films')
