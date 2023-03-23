@@ -10,12 +10,14 @@
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <li><a href="#" class="nav-link px-2 text-secondary">Homepage</a></li>
+            {%if user.is_staff %}
             <li><a href="{%url 'adddirector' %}" class="nav-link px-2 text-white"><h5>Add Director</h5></a></li>
             <li><a href="{%url 'addfilm' %}" class="nav-link px-2 text-white"><h5>Add Film</h5></a></li>
+            {% endif %}
             <li><a href="{%url 'films' %}" class="nav-link px-2 text-light">Films</a></li>
             <li><a href="{%url 'directors' %}" class="nav-link px-2 text-light">Directors</a></li>
             <li><a href="{%url 'profile_create' %}" class="nav-link px-2 text-light">Create Profile</a></li>
-
+            
         </ul>
       </div>
 
